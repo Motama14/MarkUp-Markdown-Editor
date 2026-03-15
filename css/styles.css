@@ -1,0 +1,95 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #30302e;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #121212;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 15px auto;
+    padding: 25px 5%;
+}
+
+.tool-btn, select, #export {
+    border: 1px solid #a2a2a2;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    font-size: medium;
+    height: 25px;
+    width: 100px;
+}
+
+option {
+    color: white;
+    background-color: #121212;
+    border: none;
+}
+
+#export {
+    width: fit-content;
+    padding: 0 10px;
+}
+
+#export:hover, .tool-btn:hover, select:hover {
+    background-color: #aaa;
+    color: black;
+}
+
+main {
+    margin: 25px 15px;
+}
+
+main p {
+    border-top: 1px solid #a2a2a2;
+    border-bottom: 1px solid #a2a2a2;
+    padding: 5px 0;
+    color: white;
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.editor-panel {
+    width: 100%;
+    border: 1px solid #a2a2a2;
+    height: calc(100vh - 200px);
+    margin-bottom: 10px;
+    text-align: left;
+    color: white;
+}
+
+#editor {
+    padding: 10px;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+#editor {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#editor th, #editor td {
+    border: 1px solid #a2a2a2;
+    padding: 5px;
+    min-width: 60px;
+    min-height: 30px;
+    height: 30px;
+}
+
+#editor th {
+    background-color: #1e1e1e;
+}

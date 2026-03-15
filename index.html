@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MarkUp editor</title>
+</head>
+<body>
+    <header>
+        <div class="toolbar">
+            <select id="heading-select">
+                <option value="">Titulo</option>
+                <option value="h1">H1</option>
+                <option value="h2">H2</option>
+                <option value="h3">H3</option>
+                <option value="h4">H4</option>
+                <option value="h5">H5</option>
+                <option value="h6">H6</option>
+            </select>
+            <button class="tool-btn" data-action="bold" title="Negrita (Crtl + B)"><strong>N</strong></button>
+            <button class="tool-btn" data-action="italic" title="Cursiva (Crtl + I)"><em>I</em></button>
+            <button class="tool-btn" data-action="quote" title="Cita">❝</button>
+            <button class="tool-btn" data-action="code" title="Codigo">&lt;/&gt;</button>
+            <button class="tool-btn" data-action="table" title="Tabla">Tabla</button>
+            <button class="tool-btn" data-action="separate" title="Separador">―</button>
+        </div>
+        <button id="export"><i class="fa-solid fa-download"></i>Exportar .md</button>
+    </header>
+    
+    <main>
+        <p>Editor</p>
+        <section class="editor-panel">
+            <div id="editor" contenteditable="true" spellcheck="true"></div>
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/135864cc21.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
