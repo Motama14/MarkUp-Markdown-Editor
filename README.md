@@ -1,5 +1,5 @@
 
-# ![](assets/icon.png) What is MarkUp?
+# What is MarkUp?
 
 >### MarkUp is a Markdown Editor that lets you write in plain text to then download a .md file with the exact same content you wrote previously in markdown syntax.
 
